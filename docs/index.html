@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Deca&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
+    rel="stylesheet" />
+  <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta property="og:image" content="images/main-background.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/calendar.css" />
+
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- nanogallery2 -->
+  <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+    type="text/css" />
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <meta name = "format-detection" content = "telephone=no">
+
+
+  <title>Wedding</title>
+</head>
+
+<body>
+  <div class="homepage" id="top">
+    <div class="wedding-announcement">
+      <div class="announcement-container">
+        <p class="title" style="
+              font-family: 'Noto Serif KR', serif;
+              font-size: 1.5em;
+              letter-spacing: -1px;
+              padding-top: 100px;
+            ">
+          박민호 ♥︎ 안은지
+        </p>
+        <p class="title" style="
+              font-family: 'Noto Serif KR', serif;
+              font-size: 1em;
+              letter-spacing: -1px;
+            ">
+          <b style="font-size: 1em">202x. xx. xx. SAT xx:xx</b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#top">Top</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#heart">Heart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#location">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#share">Share</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+    <!--      신랑신부-->
+    <div class="ww-section " id="couple">
+      <div class="container">
+<!--        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>-->
+        <h2 class="h4 text-center pb-3 ww-title head-color" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="mt-3">
+              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                박민호</h3>
+              <img alt="Bride" class="img-fluid"
+                   src="./images/CSH_1153_small.jpg"/>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="mt-3">
+              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                안은지</h3>
+              <img alt="Groom" class="img-fluid"
+                   src="./images/CSH_0591_small.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <article>
+
+      <!--      초대합니다-->
+      <div class="ww-section bg-light-ivory white-color">
+        <div class="container ww-wedding-introduces">
+          <h2 class="h4 text-center pb-3 ww-title head-color" style="font-family: 'Noto Serif KR', serif;">초대합니다</h2>
+          <div class="col text-center mb-5">
+            <h6 style="font-family: 'Noto Serif KR', serif; line-height: 1.8em;">
+              <br>
+              행복한 순간에는 가장 큰 기쁨이었고<br>
+              힘든 순간에는 가장 큰 위로였던<br>
+              저희 두 사람이 행복한 가정으로의<br>
+              첫 걸음을 내딛습니다.<br><br>
+              각자 서로 다른 길을 걸어온 저희가<br>
+              이제 부부의 연으로 한 길을 걸어가고자 합니다.<br>
+              평생을 좋은 남편, 좋은 아내로 살겠습니다.<br>
+              한 곳을 바라보며 첫발을 내딛습니다.<br><br>
+
+              서로 하나가 되는 날,<br>
+              소중한 자리 함께 빛내주시면<br>
+              감사하겠습니다.<br><br>
+
+              함께하지 못하시는 분들도<br>
+              보내주시는 축하와 응원으로<br>
+              두 사람의 행복한 삶을<br>
+              꾸려가도록 하겠습니다.<br>
+              고맙습니다.<br>
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="ww-section bg-dark-ivory">
+        <div class="container ww-wedding-event text-center" style="font-family: 'Noto Serif KR', serif;">
+          <h3 class="h4 text-center pb-3 head-color">예식 안내</h3>
+          <!-- <div class="names"><span>박종현</span> <span>&#183;</span> <span>지선애</span> 의 장남 <span>민호</span></div> -->
+          <!-- <div class="names"><span>?</span> <span>&#183;</span> <span>?</span> 의 차녀 <span>은지</span></div> -->
+          <div class="names"> 신랑 <span>박민호</span> <span>&#183;</span> 신부 <span>안은지</span></div>
+          <ul class="address">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="pl-2 text-muted">그랜드 하얏트 서울 <br /> 2층 남산룸</span>
+            </li>
+            <li class="pt-2">
+              <i class="far fa-calendar-alt"></i>
+              <span class="pl-2 text-muted">2023년 xx월 xx일, xx:xx</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+    </section>
+    <section class="ww-section" id="gallery">
+      <h3 class="text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif">
+        갤러리
+      </h3>
+      <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+      <script>
+        jQuery(document).ready(function () {
+          jQuery('#nanogallery2').nanogallery2({
+            // ### gallery settings ###
+            thumbnailHeight: 150,
+            thumbnailWidth: 'auto',
+            thumbnailDisplayTransition: 'slideUp2',
+            thumbnailDisplayTransitionDuration: 500,
+            thumbnailDisplayInterval: 30,
+            galleryDisplayTransition: 'rotateX',
+            galleryDisplayTransitionDuration: 500,
+            thumbnailHoverEffect2: 'scale120',
+            thumbnailL1BorderHorizontal: 0,
+            thumbnailL1BorderVertical: 0,
+
+            // ### gallery content ###
+            items: [
+              {
+                src: '/images/1.jpeg',
+                srct: '/images/1.jpeg',
+              },
+              {
+                src: '/images/2.jpeg',
+                srct: '/images/2.jpeg',
+              },
+              {
+                src: '/images/3.jpeg',
+                srct: '/images/3.jpeg',
+              },
+              {
+                src: '/images/4.jpeg',
+                srct: '/images/4.jpeg',
+              },
+              {
+                src: '/images/5.jpeg',
+                srct: '/images/5.jpeg',
+              },
+              {
+                src: '/images/6.jpeg',
+                srct: '/images/6.jpeg',
+              },
+              {
+                src: '/images/7.jpeg',
+                srct: '/images/7.jpeg',
+              },
+              {
+                src: '/images/8.jpeg',
+                srct: '/images/8.jpeg',
+              },
+              {
+                src: '/images/9.jpeg',
+                srct: '/images/9.jpeg',
+              },
+              {
+                src: '/images/10.jpeg',
+                srct: '/images/10.jpeg',
+              },
+              {
+                src: '/images/11.jpeg',
+                srct: '/images/11.jpeg',
+              },
+              {
+                src: '/images/12.jpeg',
+                srct: '/images/12.jpeg',
+              },
+            ],
+          });
+        });
+      </script>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lnRIXAylUOM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe> -->
+    </section>
+
+    <section class="ww-section" id="heart">
+      <h3 class="text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif">
+        마음 전하는 곳
+      </h3>
+      <div class="container-fluid">
+        <div class="txt_outer">
+          <div class="txt_inner">
+            <!-- Javascript가 필요없이 data-toggle에 collapse href에 대상 id을 설정합니다. -->
+            <div class="text-center" data-toggle="collapse" href="#collapse1" aria-expanded="false"
+              style="font-family: Noto Serif KR; font-size: 16px; padding-top: 10px" aria-controls="collapseExample">▶︎ 신랑측
+              확인하기</div>
+            <!-- collapse 대상 태그는 class를 collapse로 설정합니다. -->
+            <div class="collapse" id="collapse1">
+              <ul>
+                <li>
+                  <span class="pl-2 text-muted">박민호 신한 xxx-xxx-xxxxx <button class="btn btn-link" id=m>복사하기</button></span>
+                </li>
+              </ul>
+            </div>
+            <div class="txt_outer">
+              <div class="txt_inner">
+              </div>
+            </div>
+            <!-- Javascript가 필요없이 data-toggle에 collapse href에 대상 id을 설정합니다. -->
+            <div class="text-center" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+              style="font-family: Noto Serif KR; font-size: 16px; padding-top: 10px" aria-controls="collapseExample">▶︎ 신부측
+              확인하기</div>
+            <!-- collapse 대상 태그는 class를 collapse로 설정합니다. -->
+            <div class="collapse" id="collapse2">
+              <ul>
+                <li>
+                  <span class="pl-2 text-muted">안은지 신한 xxxxx-xx-xxxxx <button class="btn btn-link" id=f>복사하기</button></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="ww-section" id="location">
+      <div class="separator transparent" style="margin-top: 35px; margin-bottom: 0px"></div>
+      <div class="container">
+        <div class="col text-center">
+          <h3 class="text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif">
+            오시는 길
+          </h3>
+          <div>
+            <h5 style="font-family: 'Noto Serif KR', serif">
+              그랜드 하얏트 2층 남산룸
+            </h5>
+            <h6 style="font-family: 'Noto Serif KR', serif">
+              (서울특별시 용산구 소월로 322)
+            </h6>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="my-3 text-center">
+              <a href="https://m.map.naver.com/search2/site.naver?code=11555954">
+                <img alt="naver-map" class="map-icon" width="50" height="50" id="naver-map"
+                  src="images/map/naver-map.png" />
+              </a>
+              <a
+                href="https://m.map.kakao.com/actions/searchView?q=그랜드하얏트서울&wxEnc=MOPTQPHQRM&wyEnc=QNOQULS&lvl=4#!/18661190/map/place">
+                <img alt="kakao-map" class="map-icon" width="50" height="50" id="kakao-map"
+                  src="images/map/kakao-map.png" />
+              </a>
+            </div>
+            <div class="my-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.674429113859!2d126.99531131549423!3d37.539171233452166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3b2ce1f4d61%3A0x8fa04bbce8c8228a!2sGrand%20Hyatt%20Seoul%2C%20Seoul!5e0!3m2!1sen!2skr!4v1656249248889!5m2!1sen!2skr"
+                width="100%" height="400" frameborder="0" style="border: 0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator transparent" style="margin-top: 35px; margin-bottom: 0px"></div>
+        <div class="vc_row wpb_row section vc_row-fluid vc_inner" style="text-align: left">
+          <div class="full_section_inner clearfix">
+            <div class="wpb_column vc_column_container vc_col-sm-4">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    Address.
+                  </div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    도로명 : 서울특별시 용산구 소월로 322 그랜드 하얏트 호텔<br />
+                    지번 : 서울특별시 용산구 한남동 747-7 그랜드 하얏트 호텔
+                  </div>
+                  <div class="separator transparent" style="margin-top: 20px; margin-bottom: 0px"></div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    Subway.
+                  </div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    지하철 6호선 한강진역 1번출구 도보 857m<br />
+                    지하철 6호선 녹사평역 4번 출구로 나와 시내버스정류장 옆에서 03번 마을버스 승차.
+                  </div>
+                  <div class="separator transparent" style="margin-top: 20px; margin-bottom: 0px"></div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    Bus.
+                  </div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    간선 402번, 405번<br />
+                  </div>
+                  <div class="separator transparent" style="margin-top: 20px; margin-bottom: 0px"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wpb_column vc_column_container vc_col-sm-8">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    Car.
+                  </div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    한남대교: 약수동 방향 → 남산순환도로 진입 → 2번째 신호등에서 좌회전
+                  </div>
+                  <div class="separator transparent" style="margin-top: 10px; margin-bottom: 0px"></div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    반포대교: 3호터널 방향 → 중앙경리단 우회전 → 언덕끝에서 우회전
+                  </div>
+                  <div class="separator transparent" style="margin-top: 10px; margin-bottom: 0px"></div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    서울역: 숭례문 우회전 → 남산순환도로 끝에서 우회전
+                  </div>
+                  <div class="separator transparent" style="margin-top: 10px; margin-bottom: 0px"></div>
+                  <div class="custom_font_holder" style="
+                        font-family: Notokr regular regular;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-style: normal;
+                        font-weight: 100;
+                        color: #3a3a3a;
+                        text-decoration: none;
+                        text-align: left;
+                      ">
+                    동호대교: 약수역 좌회전 → 이태원 방향 → 숭례문 이정표 우회전 → 2번째 신호등 좌회전
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator transparent" style="margin-top: 35px; margin-bottom: 0px"></div>
+      </div>
+    </section>
+
+    <section class="ww-section" id="share">
+      <h3 class="text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif">
+        공유하기
+      </h3>
+      <div class="my-3 text-center">
+        <a id="kakao-link-btn" href="javascript:;">
+          <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" width="50"
+            height="50" />
+        </a>
+      </div>
+      <script type='text/javascript'>
+        //<![CDATA[
+        Kakao.init('e1d38ecb447cd4097eacb26e321244e8');
+
+        Kakao.Link.createDefaultButton({
+          container: '#kakao-link-btn',
+          objectType: 'feed',
+          content: {
+            title: '박민호 ♥︎ 안은지',
+            description: '소중한 날, 초대합니다',
+            imageUrl: 'https://github.com/minho-eunji-wedding/minho-eunji-wedding.github.io/blob/master/docs/images/main-background.jpg?raw=true',
+            link: {
+              mobileWebUrl: 'https://minho-eunji-wedding.github.io',
+              webUrl: 'https://minho-eunji-wedding.github.io'
+            }
+          },
+          buttons: [
+            {
+              title: '청첩장 바로가기',
+              link: {
+                mobileWebUrl: 'https://minho-eunji-wedding.github.io',
+                webUrl: 'https://minho-eunji-wedding.github.io'
+              }
+            }
+          ]
+        });
+          //]]>
+      </script>
+
+    </section>
+  </article>
+
+  <div class="bottom_right">
+    <i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
+  </div>
+
+  <div class="bottom_left">
+    <audio id="player" src="mus.mp3"></audio>
+    <div>
+      <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/clipboard.min.js"></script>
+
+</body>
+</html>
